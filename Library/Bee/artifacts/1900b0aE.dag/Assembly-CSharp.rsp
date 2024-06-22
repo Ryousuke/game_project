@@ -358,11 +358,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/GhostCharacter_Free/Scripts/GhostScript.cs"
-"Assets/PlayerController.cs"
 "Assets/Sample(Sugamoto)/ChangeScenButton.cs"
 "Assets/Sample(Sugamoto)/CollisionDetector.cs"
 "Assets/Sample(Sugamoto)/DisplayButton.cs"
 "Assets/Sample(Sugamoto)/MoveEnemy.cs"
+"Assets/Sample(Sugamoto)/PlayerController.cs"
 "Assets/Sample(Sugamoto)/time.cs"
 "Assets/Sample(Sugamoto)/TraceEnemy.cs"
 -langversion:9.0
