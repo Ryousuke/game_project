@@ -358,6 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/GhostCharacter_Free/Scripts/GhostScript.cs"
+"Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs"
 "Assets/Sample(Sugamoto)/ChangeScenButton.cs"
 "Assets/Sample(Sugamoto)/CollisionDetector.cs"
 "Assets/Sample(Sugamoto)/DisplayButton.cs"

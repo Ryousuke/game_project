@@ -28,6 +28,7 @@ public class DisplayButton : MonoBehaviour
     {
         if(_text.text == "MENU")
         {
+            //Debug.Log("Push MENU");
             _text.text = "CLOSE";
             _text.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
             //button.colors = Color.black;
@@ -38,6 +39,7 @@ public class DisplayButton : MonoBehaviour
         }
         else
         {
+            //Debug.Log("Push CLOSE");
             _text.text = "MENU";
             _text.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
             //button.colors = Color.white;
