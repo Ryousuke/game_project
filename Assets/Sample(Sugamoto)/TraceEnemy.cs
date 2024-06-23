@@ -6,11 +6,8 @@ using UnityEngine.AI;
 
 public class TraceEnemy : MonoBehaviour
 {
-    //[SerializeField] private PlayerController _playerController;
     private NavMeshAgent _agent;
     private RaycastHit[] _raycastHits = new RaycastHit[10];
-    //private Vector3 position_now;
-    private Vector3 position_pre;
 
     private Animator anim;
 
@@ -19,33 +16,17 @@ public class TraceEnemy : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        position_pre = transform.position;
     }
 
-    
     //Update is called once per frame
-    /*
     private void Update()
     {
-        //_agent.destination = _playerController.transform.position;
-        //_agent.destination = default.transform.position;
-        var position_now = transform.position;
-        Debug.Log(position_now-position_pre);
-        if(position_pre == position_now)
+        if (Mathf.Approximately(Time.timeScale, 0f)) 
         {
-            anim.SetBool("Running", false);
-            Debug.Log("Idle");
-        }
-        else
-        {
-            anim.SetBool("Running", true);
-            Debug.Log("Run");
-        }
-        position_pre = position_now;
+		return;
+	    }
     }
-    */
     
-
     public void OnDetectObject(Collider collider)
     {
 
@@ -57,18 +38,14 @@ public class TraceEnemy : MonoBehaviour
 
             var hitCount = Physics.RaycastNonAlloc(transform.position, direction, _raycastHits, distance);
             //Debug.Log("hitCount: " + hitCount);
-            if(hitCount == 1)
+            if(hitCount == 2)
             {
                 _agent.isStopped = false;
                 _agent.destination = collider.transform.position;
-                anim.SetBool("Running", true);
-                //Debug.Log("Run");
             }
             else
             {
                 _agent.isStopped = true;
-                anim.SetBool("Running", false);
-                //Debug.Log("Idle");
             }
         }
     }
