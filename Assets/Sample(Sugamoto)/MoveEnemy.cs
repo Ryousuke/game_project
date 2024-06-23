@@ -14,7 +14,7 @@ public class MoveEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTransform = this.transform;
+        myTransform = this.transform;//初期座標の取得
         position_start = myTransform.position;
         position_now = position_start;
     }
@@ -22,15 +22,20 @@ public class MoveEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(position_now);
+        //一時停止中ならスクリプトを実行させない
+        if (Mathf.Approximately(Time.timeScale, 0f)) 
+        {
+		return;
+	    }
         
         if(rotate == 0)
         {
+            //オブジェクトの移動
             position_now += moveSpeed/60;
             myTransform.position = position_now;
             rotate = 0;
         }
-        if(position_now - position_start == moveRange)
+        if(position_now - position_start == moveRange)//指定の幅を移動したら向きを変える
         {
             moveSpeed *= -1;
             moveRange *= -1;
@@ -38,7 +43,7 @@ public class MoveEnemy : MonoBehaviour
             rotate = 120;
         }
         
-        if(rotate != 0) 
+        if(rotate != 0) //指定の速さで向きを変える
         {
             myTransform.Rotate(0f,1.5f,0f,Space.World);
             rotate--;

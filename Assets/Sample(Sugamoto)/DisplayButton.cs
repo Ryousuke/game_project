@@ -11,41 +11,27 @@ public class DisplayButton : MonoBehaviour
     [SerializeField] public Button button;
     public GameObject PanelUIObj;
     public GameObject NextUIObj;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //_text.text = "MENU";
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClick()//クリックされたときの動作
     {
-        
-    }
-
-    public void OnClick()
-    {
-        if(_text.text == "MENU")
+        if(_text.text == "MENU")//メニューボタンを押されたとき
         {
             //Debug.Log("Push MENU");
-            _text.text = "CLOSE";
-            _text.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-            //button.colors = Color.black;
-            GetComponent<Image>().color = Color.black;
-            PanelUIObj.SetActive(true);
-            
-            NextUIObj.SetActive(false);
+            Time.timeScale = 0;//時間停止
+            _text.text = "CLOSE";//テキストを"CLOSE"に
+            _text.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);//テキストカラーを白に
+            GetComponent<Image>().color = Color.black;//ボタンカラーを黒に
+            PanelUIObj.SetActive(true);//メニュー画面の表示
+            NextUIObj.SetActive(false);//次のステージのボタンを非表示
         }
-        else
+        else//クローズボタンを押されたとき
         {
             //Debug.Log("Push CLOSE");
-            _text.text = "MENU";
-            _text.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
-            //button.colors = Color.white;
-            GetComponent<Image>().color = Color.white;
-            PanelUIObj.SetActive(false);
-            NextUIObj.SetActive(false);
+            Time.timeScale = 1;//時間停止の解除
+            _text.text = "MENU";//テキストを"MENU"に
+            _text.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);//テキストカラーを黒に
+            GetComponent<Image>().color = Color.white;//ボタンカラーを白に
+            PanelUIObj.SetActive(false);//メニュー画面の非表示
         }     
     }
 }

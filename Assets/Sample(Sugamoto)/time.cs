@@ -6,16 +6,15 @@ using TMPro;
 
 public class time : MonoBehaviour
 {
-    //Textを外部に出力するための変数を定義する
-    //[...]をつけることで、内部変数がインスペクターから操作できるようになる
-    //privateをpublicにしても操作可能になる
     [SerializeField] private TextMeshProUGUI TextTime;
-    [SerializeField] private TextMeshProUGUI GoalMessage;
+    [SerializeField] public TextMeshProUGUI _menuText;
     [SerializeField] private float limitTime;
-
+    public GameObject PanelUIObj;
+    public GameObject MenuButtonUIObj;
+    public GameObject NextUIObj;
+    
     private float elapsedTime;
 
-    private int f_Goal;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,21 +24,24 @@ public class time : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(f_Goal == 0)
+        //前のフレームからの経過時間(秒)を加算する
+        elapsedTime += Time.deltaTime;
+        TextTime.text = string.Format("Time {0:f0} sec", limitTime - elapsedTime);//残り時間の表示
+
+        if((limitTime - elapsedTime) < 0)//残り時間０になったとき
         {
-            //前のフレームからの経過時間(秒)を加算する
-            elapsedTime += Time.deltaTime;
+            Miss();//ミス判定となる
         }
-        //経過時間を表示するために、経過時間を秒にしたストリングを作成する
-        TextTime.text = string.Format("Time {0:f0} sec", limitTime - elapsedTime);
     }
 
-    void OnCollisionEnter(Collision other)
+    //ミスしたときの動作
+    private void Miss()
     {
-        if(other.gameObject.name == "Goal")
-        {
-            f_Goal = 1;
-           // GoalMessage.text = "Goal!";
-        }
-    }
+        Time.timeScale = 0;//時間停止
+        PanelUIObj.SetActive(true);//メニューの表示
+        MenuButtonUIObj.SetActive(false);//メニュー表示ボタンの非表示
+        NextUIObj.SetActive(false);//次ステージノボタンの非表示
+
+        _menuText.text = "TIME UP";
+    } 
 }

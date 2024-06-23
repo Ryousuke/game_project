@@ -7,24 +7,16 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class ChangeSceneButton : MonoBehaviour
 {
-    [SerializeField] private string SceneName;
-    // Start is called before the first frame update
+    [SerializeField] private string SceneName; //遷移先のScene名の割り当て
+    
     private void Start()
     {
         var button = GetComponent<Button>();
-
+        //ボタンクリックで画面遷移
         button.onClick.AddListener(() =>
         {
             SceneManager.LoadScene(SceneName);
         });
     }
-
-/*
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-*/
 
 }

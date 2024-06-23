@@ -365,6 +365,7 @@
 "Assets/Sample(Sugamoto)/MoveEnemy.cs"
 "Assets/Sample(Sugamoto)/PlayerController.cs"
 "Assets/Sample(Sugamoto)/time.cs"
+"Assets/Sample(Sugamoto)/TraceAnimation.cs"
 "Assets/Sample(Sugamoto)/TraceEnemy.cs"
 -langversion:9.0
 /deterministic
