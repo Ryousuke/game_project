@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440e3e7b4fb535143a1f0fc1905abd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: SampleScene
+  SceneName: EscapeScene
 --- !u!114 &386785246
 MonoBehaviour:
   m_ObjectHideFlags: 0
