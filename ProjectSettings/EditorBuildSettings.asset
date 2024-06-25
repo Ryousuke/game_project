@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: b785636de71ef4c40b4597bbb52286d5
   - enabled: 1
+    path: Assets/Scenes/NormalStageScene.unity
+    guid: ca92b056473a9934ea6a3d51ceaa64c4
+  - enabled: 1
+    path: Assets/Scenes/HardStageScene.unity
+    guid: abd002032a56ec4459951a2d5a304da5
+  - enabled: 1
     path: Assets/Scenes/EscapeScene.unity
     guid: bb362b08f1fc3b740b00bb3043489a16
   - enabled: 1
