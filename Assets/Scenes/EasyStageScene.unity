@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 363184373}
   - component: {fileID: 363184372}
   m_Layer: 0
-  m_Name: "\u30B4\u30FC\u30EB"
+  m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,6 +735,7 @@ GameObject:
   - component: {fileID: 436286943}
   - component: {fileID: 436286942}
   - component: {fileID: 436286947}
+  - component: {fileID: 436286948}
   m_Layer: 0
   m_Name: "\u30D7\u30EC\u30A4\u30E4\u30FC"
   m_TagString: Player
@@ -871,6 +872,22 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 5
   rotationSpeed: 100
+--- !u!114 &436286948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436286941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af4ffc8ffb14d94690cd82794f1399d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelUIObj: {fileID: 1928976492321250025}
+  ButtonUIObj: {fileID: 2761736619407365234}
+  NextUIObj: {fileID: 8065319219097195975}
+  _menuText: {fileID: 1406554394362902558}
 --- !u!1 &457202904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,7 +3987,7 @@ GameObject:
   - component: {fileID: 1676672938}
   - component: {fileID: 1676672937}
   m_Layer: 0
-  m_Name: "\u5E95"
+  m_Name: Fall
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5777,7 +5794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440e3e7b4fb535143a1f0fc1905abd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: NormalStageScene
+  SceneName: EasyStageScene
 --- !u!1 &8065319219097195975
 GameObject:
   m_ObjectHideFlags: 0

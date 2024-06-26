@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscapeScene.unity
     guid: bb362b08f1fc3b740b00bb3043489a16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EnemySampleScene.unity
     guid: 12d14172d53207f44997bd151b799c25
   - enabled: 1
