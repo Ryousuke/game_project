@@ -56,9 +56,23 @@ public class CharacterMovement : MonoBehaviour
         float rotateHorizontal = Input.GetAxis("HorizontalArrow");
         float rotateVertical = Input.GetAxis("VerticalArrow");
 
-        mainCamera.transform.RotateAround(transform.position, Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
-        mainCamera.transform.RotateAround(transform.position, mainCamera.transform.right, -rotateVertical * rotationSpeed * Time.deltaTime);
+        // キャラクターを左右に回転
+        transform.Rotate(Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
+
+        // カメラの垂直方向の回転をキャラクターに反映
+        float newPitch = rotateVertical * rotationSpeed * Time.deltaTime;
+        float newRotation = mainCamera.transform.eulerAngles.x - newPitch;
+
+        // 上下方向の回転角度を制限する
+        if (newRotation > 180f)
+        {
+            newRotation -= 360f;
+        }
+        newRotation = Mathf.Clamp(newRotation, -30f, 30f); // 最大30度まで回転可能に制限
+
+        mainCamera.transform.RotateAround(transform.position, mainCamera.transform.right, -newPitch);
     }
+
 
     void Jump()
     {

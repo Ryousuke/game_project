@@ -4,38 +4,55 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public Transform target; // ターゲットとなるオブジェクト（キャラクター）
-    public float distance = 5.0f; // ターゲットとの距離
-    public float heightOffset = 2.0f; // カメラの高さオフセット
-    public float rotationSpeed = 100.0f; // カメラの回転速度
+    public Transform target; // キャラクターのTransform
+    public float moveSpeed = 10f; // カメラ移動速度
+    public float rotationSpeed = 100f; // カメラ回転速度
 
-    private float currentX = 0.0f;
-    private float currentY = 0.0f;
-
-    void Start()
+    private void Update()
     {
-        Vector3 angles = transform.eulerAngles;
-        currentX = angles.y;
-        currentY = angles.x;
+        Move();
+        RotateCharacter();
     }
 
-    void LateUpdate()
+    void Move()
     {
-        if (target)
-        {
-            // 矢印キーでカメラを回転
-            float horizontal = Input.GetAxis("HorizontalArrow") * rotationSpeed * Time.deltaTime;
-            float vertical = -Input.GetAxis("VerticalArrow") * rotationSpeed * Time.deltaTime;
+        float moveHorizontal = Input.GetAxis("HorizontalWASD");
+        float moveVertical = Input.GetAxis("VerticalWASD");
 
-            currentX += horizontal;
-            currentY = Mathf.Clamp(currentY + vertical, -40, 40);
+        // カメラの前方向と右方向を取得
+        Vector3 cameraForward = transform.forward;
+        Vector3 cameraRight = transform.right;
 
-            Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-            Vector3 position = target.position - (rotation * Vector3.forward * distance) + (Vector3.up * heightOffset);
+        // Y軸方向の成分をゼロにして、XZ平面に投影
+        cameraForward.y = 0;
+        cameraRight.y = 0;
 
-            transform.rotation = rotation;
-            transform.position = position;
-        }
+        cameraForward.Normalize();
+        cameraRight.Normalize();
+
+        // カメラの方向に基づいて移動ベクトルを計算
+        Vector3 movement = (cameraForward * moveVertical + cameraRight * moveHorizontal) * moveSpeed * Time.deltaTime;
+
+        transform.position += movement;
+    }
+
+    void RotateCharacter()
+    {
+        float rotateHorizontal = Input.GetAxis("HorizontalArrow");
+        float rotateVertical = Input.GetAxis("VerticalArrow");
+
+        // キャラクターを左右に回転
+        target.Rotate(Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
+
+        // カメラの垂直方向の回転をキャラクターに反映
+        float newPitch = rotateVertical * rotationSpeed * Time.deltaTime;
+        transform.RotateAround(target.position, transform.right, -newPitch);
+    }
+
+    private void LateUpdate()
+    {
+        // カメラをキャラクターの後ろに配置する
+        Vector3 offset = -transform.forward * 5f + transform.up * 1f; // キャラクターの後ろに5単位だけ配置し、上に1単位オフセット
+        transform.position = target.position + offset;
     }
 }
-
