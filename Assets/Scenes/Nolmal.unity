@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 23623606}
   - component: {fileID: 23623605}
   - component: {fileID: 23623604}
-  - component: {fileID: 23623607}
+  - component: {fileID: 23623608}
   - component: {fileID: 23623608}
   m_Layer: 0
   m_Name: Wall-25
