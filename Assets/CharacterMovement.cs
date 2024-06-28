@@ -9,6 +9,7 @@ public class CharacterMovement : MonoBehaviour
     private Rigidbody rb;
     private Camera mainCamera;
     private bool isGrounded;
+    private Animator animator; //アニメーター
 
     public float rotationSpeed = 100f; // カメラ回転速度
 
@@ -16,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         mainCamera = Camera.main;
+        animator = GetComponent<Animator>(); //アニメーターの取得
     }
 
     void Update()
@@ -49,6 +51,10 @@ public class CharacterMovement : MonoBehaviour
         Vector3 movement = (cameraForward * moveVertical + cameraRight * moveHorizontal) * moveSpeed * Time.deltaTime;
 
         rb.MovePosition(transform.position + movement);
+
+        //アニメーションの制御
+        bool walking = moveHorizontal != 0 || moveVertical != 0;
+        animator.SetBool("walking", walking);
     }
 
     void RotateCamera()
