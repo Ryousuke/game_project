@@ -60,23 +60,41 @@ public class PlayerUIController : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+
         if(other.gameObject.name == "Fall")
         {
             Miss();
-            Debug.Log("Miss");
+            //Debug.Log("Miss");
         }
         else if(other.transform.root.gameObject.name == "Enemy")
         {
             Miss();
-            Debug.Log("Miss");
+            //Debug.Log("Miss");
         }
         else if(other.gameObject.name == "Goal")
         {
             Clear();
             //Time.timeScale=0;
-            Debug.Log("Goal");
+            //Debug.Log("Goal");
+        }
+        if(other.gameObject.name == "Wall")
+        {
+            Debug.Log("Wall");
+            Miss();
+            //Debug.Log("Miss");
+        }
+
+    }
+
+    void OnCollisionStay(Collision other)
+    {
+        if(other.gameObject.name == "RightWall")
+        {
+            //OnCollisionEnter(Collision other);
+            Debug.Log("Wall");
         }
     }
+
 
     private void Miss()
     {
