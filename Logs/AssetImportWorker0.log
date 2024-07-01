@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.33f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_project/game_project-Title
+C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_proect/game_project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52311
-Successfully changed project path to: C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_project/game_project-Title
-C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_project/game_project-Title
+50799
+Successfully changed project path to: C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_proect/game_project
+C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_proect/game_project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_project/game_project-Title
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19560] Host "[IP] 192.168.1.33 [Port] 0 [Flags] 2 [Guid] 1248114980 [EditorId] 1248114980 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O688O24R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [33776] Host "[IP] 192.168.1.33 [Port] 0 [Flags] 2 [Guid] 2768846018 [EditorId] 2768846018 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O688O24R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19560] Host "[IP] 192.168.1.33 [Port] 0 [Flags] 2 [Guid] 1248114980 [EditorId] 1248114980 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O688O24R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33776] Host "[IP] 192.168.1.33 [Port] 0 [Flags] 2 [Guid] 2768846018 [EditorId] 2768846018 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O688O24R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 2580.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.33f1 (b2c853adf198)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_project/game_project-Title/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Sugamoto_spdrmn3/Documents/GitHub/game_proect/game_project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,43 +70,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.256638 seconds.
-- Loaded All Assemblies, in 12.559 seconds
+Registered in 0.022189 seconds.
+- Loaded All Assemblies, in  2.522 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.571 seconds
-Domain Reload Profiling: 13126ms
-	BeginReloadAssembly (11630ms)
+- Finished resetting the current domain, in  1.119 seconds
+Domain Reload Profiling: 3639ms
+	BeginReloadAssembly (388ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (93ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (381ms)
-	LoadAllAssembliesAndSetupDomain (435ms)
-		LoadAssemblies (11625ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (119ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (1819ms)
+		LoadAssemblies (375ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (429ms)
-			TypeCache.Refresh (426ms)
-				TypeCache.ScanAssembly (391ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (572ms)
+		AnalyzeDomain (1814ms)
+			TypeCache.Refresh (1806ms)
+				TypeCache.ScanAssembly (1303ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1121ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (455ms)
+		SetupLoadedEditorAssemblies (952ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (17ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (291ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (774ms)
 			ProcessInitializeOnLoadMethodAttributes (128ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 13126ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  6.573 seconds
-Refreshing native plugins compatible for Editor in 15.40 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.421 seconds
+Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.190 seconds
-Domain Reload Profiling: 8754ms
-	BeginReloadAssembly (527ms)
+- Finished resetting the current domain, in  1.495 seconds
+Domain Reload Profiling: 3906ms
+	BeginReloadAssembly (318ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (125ms)
-	RebuildNativeTypeToScriptingClass (46ms)
-	initialDomainReloadingComplete (140ms)
-	LoadAllAssembliesAndSetupDomain (5724ms)
-		LoadAssemblies (5021ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (83ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (155ms)
+	LoadAllAssembliesAndSetupDomain (1833ms)
+		LoadAssemblies (1463ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1033ms)
-			TypeCache.Refresh (968ms)
-				TypeCache.ScanAssembly (925ms)
-			ScanForSourceGeneratedMonoScriptInfo (47ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (2191ms)
+		AnalyzeDomain (557ms)
+			TypeCache.Refresh (501ms)
+				TypeCache.ScanAssembly (459ms)
+			ScanForSourceGeneratedMonoScriptInfo (42ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1496ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1764ms)
+		SetupLoadedEditorAssemblies (1051ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (19ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (15ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (196ms)
-			ProcessInitializeOnLoadAttributes (1438ms)
-			ProcessInitializeOnLoadMethodAttributes (65ms)
-			AfterProcessingInitializeOnLoad (22ms)
+			BeforeProcessingInitializeOnLoad (160ms)
+			ProcessInitializeOnLoadAttributes (795ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (17ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 9.79 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (21ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 8.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3161 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (58.2 KB). Loaded Objects now: 3622.
-Memory consumption went from 126.9 MB to 126.8 MB.
-Total: 9.093600 ms (FindLiveObjects: 0.642600 ms CreateObjectMapping: 0.334300 ms MarkObjects: 7.879300 ms  DeleteObjects: 0.233300 ms)
+Unloading 3380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (1.3 MB). Loaded Objects now: 3861.
+Memory consumption went from 152.9 MB to 151.6 MB.
+Total: 5.788400 ms (FindLiveObjects: 0.304900 ms CreateObjectMapping: 0.145100 ms MarkObjects: 2.810000 ms  DeleteObjects: 2.526700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,281 +181,116 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 7559.620607 seconds.
-  path: Assets/LB3D/RandomBlocks/Textures/Floors/Dungeon-1
-  artifactKey: Guid(2110eea5659bfbf409689f2b9033cd44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Textures/Floors/Dungeon-1 using Guid(2110eea5659bfbf409689f2b9033cd44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2038824a8d94747ddbfd0876eac76960') in 0.007305 seconds
+  Time since last request: 598651.407034 seconds.
+  path: Assets/LB3D/RandomBlocks/Prefabs/Floors/Dungeon-1/Dungeon-1-L0-V1.prefab
+  artifactKey: Guid(6b9d15ed8af4f7a41adf74f8af0a717f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Prefabs/Floors/Dungeon-1/Dungeon-1-L0-V1.prefab using Guid(6b9d15ed8af4f7a41adf74f8af0a717f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6b62c5449d01f4ceff26817208d196a') in 0.019461 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 13.391576 seconds.
-  path: Assets/LB3D/RandomBlocks/Textures/Floors
-  artifactKey: Guid(80bb6acb0a3c7ad42b4066e82949f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Textures/Floors using Guid(80bb6acb0a3c7ad42b4066e82949f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '43dccc247a40b4ed194a850af4c661c4') in 0.000907 seconds
+  Time since last request: 49.254712 seconds.
+  path: Assets/Sample(Sugamoto)/MoveStageObject.cs
+  artifactKey: Guid(75a817f9941b5e14e85be3f0a13d4904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sample(Sugamoto)/MoveStageObject.cs using Guid(75a817f9941b5e14e85be3f0a13d4904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9efa65b04310146945800b0c3a19010a') in 0.004808 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 3.514689 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Floors
-  artifactKey: Guid(80f38a3ac896995479f04c626774433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Floors using Guid(80f38a3ac896995479f04c626774433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ec01ba16a8ed5f24a18088f665351443') in 0.014290 seconds
+  Time since last request: 59.762504 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(a5c5d43973cb43a4a99b8018c240cd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(a5c5d43973cb43a4a99b8018c240cd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00d54d4c59c653794d197ae37050d07b') in 0.381051 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 1.627639 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Floors/Default
-  artifactKey: Guid(7329f33d770fc7547af2ebbb8eb2850b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Floors/Default using Guid(7329f33d770fc7547af2ebbb8eb2850b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '86957f4d9c62a5ec7037080be92807ea') in 0.000732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.912401 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Floors/Dungeon-3
-  artifactKey: Guid(309d623fb83eebc42a62bbadacd186f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Floors/Dungeon-3 using Guid(309d623fb83eebc42a62bbadacd186f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c20a5d6bfe027252104f3860f22e939c') in 0.000711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.216814 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/Default
-  artifactKey: Guid(fc51878c6a29eee4ab75ea9f9b95bd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/Default using Guid(fc51878c6a29eee4ab75ea9f9b95bd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9e913a7a6f905514380abe5fe339f629') in 0.001367 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.604974 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks
-  artifactKey: Guid(0236c3925a9ed664991b61401bc76168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks using Guid(0236c3925a9ed664991b61401bc76168) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'bd10ee5eef817f10a9f1fdf0137a231f') in 0.001446 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.753091 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1/CastBlocks-L1-V1.prefab
-  artifactKey: Guid(433119f560e82ec46ab0db905e5c3843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1/CastBlocks-L1-V1.prefab using Guid(433119f560e82ec46ab0db905e5c3843) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tree 1.prefab
+  artifactKey: Guid(9bb9accf9ba8983428595e0a5a837f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree 1.prefab using Guid(9bb9accf9ba8983428595e0a5a837f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b377762f6bfb3fb1cbe13f491670aee5') in 0.395401 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8e854814f9fbc33dac62efc0d795b582') in 2.298819 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1
-  artifactKey: Guid(86ba525ed2a245740ade273ba672f45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1 using Guid(86ba525ed2a245740ade273ba672f45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4df85f91e88141cc58435cebe5699464') in 0.002317 seconds
+  Time since last request: 0.000092 seconds.
+  path: Assets/TerrainData_e9578d5b-9ee1-4769-b070-e36c6dfd6ba9.asset
+  artifactKey: Guid(cfe4852150da1e94dac0fd3fcb264662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_e9578d5b-9ee1-4769-b070-e36c6dfd6ba9.asset using Guid(cfe4852150da1e94dac0fd3fcb264662) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6a01ff839b3cc2ab8bc9e3bdc8279836') in 0.017995 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000562 seconds.
-  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1/CastBlocks-L1-V3.prefab
-  artifactKey: Guid(80a7f2f43740e89489c9094d9ac41bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L1/CastBlocks-L1-V3.prefab using Guid(80a7f2f43740e89489c9094d9ac41bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 427.566021 seconds.
+  path: Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-2/Dungeon-2-L0-V1.mat
+  artifactKey: Guid(23a7dca1502064b488454db6ddd0c91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-2/Dungeon-2-L0-V1.mat using Guid(23a7dca1502064b488454db6ddd0c91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7dd75a5fa8e67acbd5e7ed8d9dad6fec') in 0.066623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 10.115961 seconds.
-  path: Assets/LB3D/RandomBlocks/Models/Blocks
-  artifactKey: Guid(af72a88a1347baa45a91390ae389a07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Models/Blocks using Guid(af72a88a1347baa45a91390ae389a07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5e1a4545fb1d37a61ff7ce9c3203919c') in 0.001387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.710671 seconds.
-  path: Assets/LB3D/RandomBlocks/Models/Blocks/Clean
-  artifactKey: Guid(57a0bd6278e6a094c9770e331dccde98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Models/Blocks/Clean using Guid(57a0bd6278e6a094c9770e331dccde98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd983cbba4d2335f1412b1bb8dd8e00cb') in 0.013308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.629672 seconds.
-  path: Assets/LB3D/RandomBlocks/Models/Blocks/Clean/Cube/Cube.fbx
-  artifactKey: Guid(00566108345ebae40badd4ff8732aac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Models/Blocks/Clean/Cube/Cube.fbx using Guid(00566108345ebae40badd4ff8732aac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a4f57d0e90be2b3cea91de86673e1049') in 0.102333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 7.877854 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Blocks/Default
-  artifactKey: Guid(1aefb80fc78eacd4a99b5258b289d065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Blocks/Default using Guid(1aefb80fc78eacd4a99b5258b289d065) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5a33d351e3d4f6cda48dc023545c0f46') in 0.000715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.837429 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Blocks/Dungeon-4
-  artifactKey: Guid(70cbf7e818575724d9c46e038eb18f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Blocks/Dungeon-4 using Guid(70cbf7e818575724d9c46e038eb18f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4adc9ddc67a748d32921c529557db1c9') in 0.000737 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.090655 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Floors/CastBlocks
-  artifactKey: Guid(b14e352b303df814caf939f7f9f5b99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Floors/CastBlocks using Guid(b14e352b303df814caf939f7f9f5b99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ec0bbd04891cc835c67607f5861d29f6') in 0.001201 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.775957 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Floors/Block-Floor-Mossy
-  artifactKey: Guid(a0e2d1f617246bb45b31df56fad6a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Floors/Block-Floor-Mossy using Guid(a0e2d1f617246bb45b31df56fad6a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4111c6303030e184668d078ef9e95345') in 0.001152 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.459027 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-1
-  artifactKey: Guid(6733d0a06fc138949b579c029e54662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-1 using Guid(6733d0a06fc138949b579c029e54662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '07c7137867f7af1f79b31bef1fff46f9') in 0.001089 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.888116 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-2
-  artifactKey: Guid(26c7497e0e51eb54482b12873226a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-2 using Guid(26c7497e0e51eb54482b12873226a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b6d492b24efbcf8038c6ab63c588ca19') in 0.000960 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.942914 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Safezone/Door.mat
-  artifactKey: Guid(9a9ab6b7c918733418f13ad7a90795f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Safezone/Door.mat using Guid(9a9ab6b7c918733418f13ad7a90795f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ab075a9a8edacdb7b5947ae4d57b19b8') in 0.422015 seconds
+ -> (artifact id: 'cb47a802137e7a59ddbdb0426171ff26') in 0.412981 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Safezone/Wall_2.mat
-  artifactKey: Guid(6504fd42a22c4c242a34ff641fadc613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Safezone/Wall_2.mat using Guid(6504fd42a22c4c242a34ff641fadc613) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 10.163715 seconds.
+  path: Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-4/Dungeon-4-L0-V1.mat
+  artifactKey: Guid(49d2d1b6404cd264f9e184d6048047c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Materials/Floors/Dungeon-4/Dungeon-4-L0-V1.mat using Guid(49d2d1b6404cd264f9e184d6048047c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e8406e470ed0bbc78cbc82d85a1e0e5d') in 0.340894 seconds
+ -> (artifact id: 'de563ea7726ddbbda915afa3a2039d34') in 0.099951 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/LB3D/RandomBlocks/Materials/Safezone/Wall_1.mat
-  artifactKey: Guid(5a56567f0d9bcec40841713611ecdb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Materials/Safezone/Wall_1.mat using Guid(5a56567f0d9bcec40841713611ecdb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c47293cd14765e07d5727b09f3bc1158') in 0.218920 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 8.368768 seconds.
-  path: Assets/LB3D/RandomBlocks/Textures/Blocks
-  artifactKey: Guid(29ee53a78a192bf44b454a5298878ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LB3D/RandomBlocks/Textures/Blocks using Guid(29ee53a78a192bf44b454a5298878ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e960ab47551e4a88450c05c82a12aaa0') in 0.002864 seconds
+  Time since last request: 28.151885 seconds.
+  path: Assets/LB3D/RandomBlocks/Materials/Blocks/Dungeon-1/L2
+  artifactKey: Guid(64e6bc5efabb9ff418ba9d87d1a0a9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Materials/Blocks/Dungeon-1/L2 using Guid(64e6bc5efabb9ff418ba9d87d1a0a9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f4dabaa70c75b1615828fddea6c263ab') in 0.002658 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.182 seconds
-Refreshing native plugins compatible for Editor in 12.78 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.159 seconds
-Domain Reload Profiling: 5337ms
-	BeginReloadAssembly (458ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (85ms)
-	RebuildCommonClasses (86ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (527ms)
-		LoadAssemblies (736ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (39ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (4161ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1367ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (17ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (207ms)
-			ProcessInitializeOnLoadAttributes (1021ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 10.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3140 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.8 KB). Loaded Objects now: 3670.
-Memory consumption went from 125.0 MB to 125.0 MB.
-Total: 9.184000 ms (FindLiveObjects: 0.470900 ms CreateObjectMapping: 0.339500 ms MarkObjects: 8.185900 ms  DeleteObjects: 0.184800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 6.228809 seconds.
+  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-1/L2/Dungeon-L2-V1.prefab
+  artifactKey: Guid(77b88a865b1e89140955b029867b2880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-1/L2/Dungeon-L2-V1.prefab using Guid(77b88a865b1e89140955b029867b2880) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7fc815c724392416bf59aa21fcd89e6b') in 0.005041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.364637 seconds.
+  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-1/L3/Dungeon-L3-V1.prefab
+  artifactKey: Guid(e3bc8163331de444ba3ad1ce42f401b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-1/L3/Dungeon-L3-V1.prefab using Guid(e3bc8163331de444ba3ad1ce42f401b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '121117970afa6b3ee0d485b69104b3d8') in 0.002515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.736412 seconds.
+  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-4/L1/Dungeon-4-L1-V1.prefab
+  artifactKey: Guid(bb744ccff3a7a4d499cce543bbe8495c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/Dungeon-4/L1/Dungeon-4-L1-V1.prefab using Guid(bb744ccff3a7a4d499cce543bbe8495c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c4d42cdf06e6542dd6c3d37c35389c3f') in 0.016677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2831.292870 seconds.
+  path: Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L2/CastBlocks-L2-V2.prefab
+  artifactKey: Guid(0d460a786c4ccec4b948637a5fea6384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LB3D/RandomBlocks/Prefabs/Blocks/CastBlocks/L2/CastBlocks-L2-V2.prefab using Guid(0d460a786c4ccec4b948637a5fea6384) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd0ccf84a32bd0bad089d70b56d9b347e') in 0.556002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
