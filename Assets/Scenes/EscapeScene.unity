@@ -937,12 +937,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 136284727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  Freq: 2.5
 --- !u!136 &136284730
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4284,11 +4284,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 524177266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: 3, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!23 &524177270
 MeshRenderer:
@@ -6250,7 +6250,6 @@ GameObject:
   - component: {fileID: 655973098}
   - component: {fileID: 655973097}
   - component: {fileID: 655973096}
-  - component: {fileID: 655973095}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -6273,21 +6272,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1076160817}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!114 &655973095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655973093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &655973096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6532,11 +6516,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 661874312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: -2, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!23 &661874316
 MeshRenderer:
@@ -6634,12 +6618,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 670534202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  Freq: -2
 --- !u!136 &670534205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6757,11 +6741,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 674372765}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 20, z: 0}
-  moveRange: {x: 0, y: 10, z: 0}
+  moveSpeed: {x: 0, y: 8, z: 0}
+  moveRange: {x: 0, y: 8, z: 0}
   Freq: 0
 --- !u!65 &674372768
 BoxCollider:
@@ -7693,7 +7677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768110673}
   m_Layer: 0
-  m_Name: StageGimmick4
+  m_Name: StageGimmick6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7875,12 +7859,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 779173878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  moveSpeed: {x: 0, y: 0, z: 4}
+  moveRange: {x: 0, y: 0, z: 6}
+  Freq: 40
 --- !u!64 &779173881
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8979,12 +8963,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 875292211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  moveSpeed: {x: 3, y: 0.2, z: 0}
+  moveRange: {x: 10, y: 0.2, z: 0}
+  Freq: 40
 --- !u!64 &875292214
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9122,11 +9106,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 880598374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: 2, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!23 &880598378
 MeshRenderer:
@@ -9445,7 +9429,6 @@ GameObject:
   - component: {fileID: 925644499}
   - component: {fileID: 925644498}
   - component: {fileID: 925644497}
-  - component: {fileID: 925644496}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -9468,21 +9451,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 670534203}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!114 &925644496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925644494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &925644497
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10671,7 +10639,6 @@ GameObject:
   - component: {fileID: 1034002155}
   - component: {fileID: 1034002154}
   - component: {fileID: 1034002153}
-  - component: {fileID: 1034002152}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -10694,21 +10661,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1076160817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1034002152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034002150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1034002153
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11250,12 +11202,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076160816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  Freq: 2
 --- !u!136 &1076160819
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12200,11 +12152,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143108381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: -2, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!23 &1143108385
 MeshRenderer:
@@ -12998,7 +12950,6 @@ GameObject:
   - component: {fileID: 1190409696}
   - component: {fileID: 1190409695}
   - component: {fileID: 1190409694}
-  - component: {fileID: 1190409693}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -13021,21 +12972,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1190806067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1190409693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190409691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1190409694
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13155,12 +13091,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1190806066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  Freq: -3
 --- !u!136 &1190806069
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15557,7 +15493,6 @@ GameObject:
   - component: {fileID: 1423694041}
   - component: {fileID: 1423694040}
   - component: {fileID: 1423694039}
-  - component: {fileID: 1423694038}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -15580,21 +15515,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 136284728}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1423694038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423694036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1423694039
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15923,11 +15843,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1432492669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 25, z: 0}
-  moveRange: {x: 0, y: 10, z: 0}
+  moveSpeed: {x: 0, y: 12, z: 0}
+  moveRange: {x: 0, y: 12, z: 0}
   Freq: 0
 --- !u!65 &1432492672
 BoxCollider:
@@ -16256,12 +16176,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1448372342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  moveSpeed: {x: -3, y: -0.2, z: 0}
+  moveRange: {x: 10, y: 0.2, z: 0}
+  Freq: 40
 --- !u!64 &1448372345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17013,7 +16933,6 @@ GameObject:
   - component: {fileID: 1546174795}
   - component: {fileID: 1546174794}
   - component: {fileID: 1546174793}
-  - component: {fileID: 1546174792}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -17036,21 +16955,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1190806067}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!114 &1546174792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546174790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1546174793
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18193,7 +18097,6 @@ GameObject:
   - component: {fileID: 1698441740}
   - component: {fileID: 1698441739}
   - component: {fileID: 1698441738}
-  - component: {fileID: 1698441737}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -18216,21 +18119,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 136284728}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!114 &1698441737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698441735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1698441738
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18770,11 +18658,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721746872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 15, z: 0}
-  moveRange: {x: 0, y: 10, z: 0}
+  moveSpeed: {x: 0, y: 6, z: 0}
+  moveRange: {x: 0, y: 8, z: 0}
   Freq: 0
 --- !u!65 &1721746875
 BoxCollider:
@@ -19653,11 +19541,11 @@ Transform:
   m_GameObject: {fileID: 1805197994}
   serializedVersion: 2
   m_LocalRotation: {x: -0.052335896, y: 0.9986295, z: -0, w: 0}
-  m_LocalPosition: {x: -1.78, y: 19.78, z: -825.9}
+  m_LocalPosition: {x: 4.75, y: -4.8099995, z: -4.3963404}
   m_LocalScale: {x: 4.7763944, y: 0.281825, z: 0.41949326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3315288930713906439}
+  m_Father: {fileID: 1958962602}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -6}
 --- !u!65 &1805197996
 BoxCollider:
@@ -19848,7 +19736,6 @@ GameObject:
   - component: {fileID: 1863683954}
   - component: {fileID: 1863683953}
   - component: {fileID: 1863683952}
-  - component: {fileID: 1863683951}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -19871,21 +19758,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 670534203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1863683951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863683949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
 --- !u!136 &1863683952
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20560,7 +20432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958962602}
   m_Layer: 0
-  m_Name: StageGimmick6
+  m_Name: StageGimmick4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20578,7 +20450,8 @@ Transform:
   m_LocalPosition: {x: -6.53, y: 24.59, z: -13.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1805197995}
   m_Father: {fileID: 6707733573628405682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965984252
@@ -21005,12 +20878,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021134381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  moveSpeed: {x: 0, y: 0, z: -3}
+  moveRange: {x: 0, y: 0, z: 6}
+  Freq: 40
 --- !u!64 &2021134384
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21975,11 +21848,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2076609324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: 2, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!23 &2076609328
 MeshRenderer:
@@ -30979,7 +30852,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9179001498748770160}
-  - {fileID: 1805197995}
   - {fileID: 1246692745422040943}
   - {fileID: 103325211}
   - {fileID: 1936486706}
@@ -33791,11 +33663,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4500087390401931906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
+  moveSpeed: {x: 3, y: 0, z: 0}
+  moveRange: {x: 2, y: 0, z: 0}
   Freq: 0
 --- !u!65 &4500087390401931908
 BoxCollider:
@@ -38828,9 +38700,9 @@ Transform:
   - {fileID: 66017898}
   - {fileID: 359230086}
   - {fileID: 1749245609}
-  - {fileID: 768110673}
-  - {fileID: 905723724}
   - {fileID: 1958962602}
+  - {fileID: 905723724}
+  - {fileID: 768110673}
   - {fileID: 532709915}
   - {fileID: 451244832}
   - {fileID: 1382861395}
@@ -44064,12 +43936,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9025950400131705208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a817f9941b5e14e85be3f0a13d4904, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2e0539ebfd349864cfae58238100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: 0, y: 0, z: 0}
-  moveRange: {x: 0, y: 0, z: 0}
-  Freq: 0
+  moveSpeed: {x: 0, y: 0, z: 2}
+  moveRange: {x: 0, y: 0, z: 6}
+  Freq: 40
 --- !u!23 &9031824367899203397
 MeshRenderer:
   m_ObjectHideFlags: 0
