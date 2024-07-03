@@ -10,6 +10,7 @@ public class charactermovement : MonoBehaviour
     private Camera mainCamera;
     private bool isGrounded;
     private Animator animator; // アニメーター
+    Vector3 position; // 物体の位置を格納する変数
 
     public float rotationSpeed = 100f; // カメラ回転速度
 
@@ -24,6 +25,7 @@ public class charactermovement : MonoBehaviour
     {
         Move();
         RotateCamera();
+        position = transform.position; // 現在位置の保存
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -94,6 +96,14 @@ public class charactermovement : MonoBehaviour
         {
             isGrounded = true;
             animator.SetBool("isJumping", false); // 着地したらジャンプアニメーションを解除
+        }
+
+        Debug.Log("object =" + collision.gameObject.name);
+        if (collision.transform.root.gameObject.name == "Wall") // 「床」以外との衝突が判定された
+        {
+            Vector3 boundVec = transform.position - position; // 移動ベクトル
+            Debug.Log("object =" + boundVec);
+            transform.position = position - boundVec; // 押し戻す
         }
     }
 }
