@@ -35,11 +35,11 @@ public class MoveEnemy : MonoBehaviour
             position_now += moveSpeed/60;
             myTransform.position = position_now;
             rotate = 0;
-            Debug.Log(position_now - position_start);
-            Debug.Log(moveRange);
+            //Debug.Log(position_now - position_start);
+            //Debug.Log(moveRange);
             if(position_now - position_start == moveRange)//指定の幅を移動したら向きを変える
             {
-                Debug.Log("turn");
+                //Debug.Log("turn");
                 moveSpeed *= -1;
                 moveRange *= -1;
                 position_start = position_now;
