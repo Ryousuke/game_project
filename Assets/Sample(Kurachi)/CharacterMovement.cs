@@ -4,29 +4,29 @@ using UnityEngine;
 
 public class charactermovement : MonoBehaviour
 {
-    public float moveSpeed = 10f; // ˆÚ“®‘¬“x
-    public float jumpForce = 5f; // ƒWƒƒƒ“ƒv—Í
+    public float moveSpeed = 10f; // ï¿½Ú“ï¿½ï¿½ï¿½ï¿½x
+    public float jumpForce = 5f; // ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½
     private Rigidbody rb;
     private Camera mainCamera;
     private bool isGrounded;
-    private Animator animator; // ƒAƒjƒ[ƒ^[
-    Vector3 position; // •¨‘Ì‚ÌˆÊ’u‚ğŠi”[‚·‚é•Ï”
+    private Animator animator; // ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½^ï¿½[
+    Vector3 position; // ï¿½ï¿½ï¿½Ì‚ÌˆÊ’uï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½Ïï¿½
 
-    public float rotationSpeed = 100f; // ƒJƒƒ‰‰ñ“]‘¬“x
+    public float rotationSpeed = 100f; // ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½x
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         mainCamera = Camera.main;
-        animator = GetComponent<Animator>(); // ƒAƒjƒ[ƒ^[‚Ìæ“¾
+        animator = GetComponent<Animator>(); // ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½^ï¿½[ï¿½Ìæ“¾
     }
 
     void Update()
     {
         Move();
         RotateCamera();
-        position = transform.position; // Œ»İˆÊ’u‚Ì•Û‘¶
-
+        position = transform.position; // ï¿½ï¿½ï¿½İˆÊ’uï¿½Ì•Û‘ï¿½
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
@@ -36,25 +36,25 @@ public class charactermovement : MonoBehaviour
     void Move()
     {
         float moveHorizontal = Input.GetAxis("HorizontalWASD");
-        float moveVertical = -Input.GetAxis("VerticalWASD"); // ‘OŒã‚Ì“®‚«‚ğ”½“]
+        float moveVertical = -Input.GetAxis("VerticalWASD"); // ï¿½Oï¿½ï¿½Ì“ï¿½ï¿½ï¿½ï¿½ğ”½“]
 
-        // ƒJƒƒ‰‚Ì‘O•ûŒü‚Æ‰E•ûŒü‚ğæ“¾
+        // ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½Ì‘Oï¿½ï¿½ï¿½ï¿½ï¿½Æ‰Eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
         Vector3 cameraForward = mainCamera.transform.forward;
         Vector3 cameraRight = mainCamera.transform.right;
 
-        // Y²•ûŒü‚Ì¬•ª‚ğƒ[ƒ‚É‚µ‚ÄAXZ•½–Ê‚É“Š‰e
+        // Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÄAXZï¿½ï¿½ï¿½Ê‚É“ï¿½ï¿½e
         cameraForward.y = 0;
         cameraRight.y = 0;
 
         cameraForward.Normalize();
         cameraRight.Normalize();
 
-        // ƒJƒƒ‰‚Ì•ûŒü‚ÉŠî‚Ã‚¢‚ÄˆÚ“®ƒxƒNƒgƒ‹‚ğŒvZ
+        // ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ÉŠï¿½Ã‚ï¿½ï¿½ÄˆÚ“ï¿½ï¿½xï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Z
         Vector3 movement = (cameraForward * moveVertical + cameraRight * moveHorizontal) * moveSpeed * Time.deltaTime;
 
         rb.MovePosition(transform.position + movement);
 
-        // ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì§Œä
+        // ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
         bool walking = moveHorizontal != 0 || moveVertical != 0;
         animator.SetBool("isWalking", walking);
     }
@@ -64,19 +64,19 @@ public class charactermovement : MonoBehaviour
         float rotateHorizontal = Input.GetAxis("HorizontalArrow");
         float rotateVertical = Input.GetAxis("VerticalArrow");
 
-        // ƒLƒƒƒ‰ƒNƒ^[‚ğ¶‰E‚É‰ñ“]
+        // ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½^ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½É‰ï¿½]
         transform.Rotate(Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
 
-        // ƒJƒƒ‰‚Ì‚’¼•ûŒü‚Ì‰ñ“]‚ğƒLƒƒƒ‰ƒNƒ^[‚É”½‰f
+        // ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‰ï¿½]ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½^ï¿½[ï¿½É”ï¿½ï¿½f
         float newPitch = rotateVertical * rotationSpeed * Time.deltaTime;
         float newRotation = mainCamera.transform.eulerAngles.x - newPitch;
 
-        // ã‰º•ûŒü‚Ì‰ñ“]Šp“x‚ğ§ŒÀ‚·‚é
+        // ï¿½ã‰ºï¿½ï¿½ï¿½ï¿½ï¿½Ì‰ï¿½]ï¿½pï¿½xï¿½ğ§Œï¿½ï¿½ï¿½ï¿½ï¿½
         if (newRotation > 180f)
         {
             newRotation -= 360f;
         }
-        newRotation = Mathf.Clamp(newRotation, -30f, 30f); // Å‘å30“x‚Ü‚Å‰ñ“]‰Â”\‚É§ŒÀ
+        newRotation = Mathf.Clamp(newRotation, -30f, 30f); // ï¿½Å‘ï¿½30ï¿½xï¿½Ü‚Å‰ï¿½]ï¿½Â”\ï¿½Éï¿½ï¿½ï¿½
 
         mainCamera.transform.RotateAround(transform.position, mainCamera.transform.right, -newPitch);
     }
@@ -86,7 +86,7 @@ public class charactermovement : MonoBehaviour
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         isGrounded = false;
 
-        // ƒWƒƒƒ“ƒvƒAƒjƒ[ƒVƒ‡ƒ“‚Ì§Œä
+        // ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
         animator.SetBool("isJumping", true);
     }
 
@@ -95,15 +95,15 @@ public class charactermovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            animator.SetBool("isJumping", false); // ’…’n‚µ‚½‚çƒWƒƒƒ“ƒvƒAƒjƒ[ƒVƒ‡ƒ“‚ğ‰ğœ
+            animator.SetBool("isJumping", false); // ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
 
-        Debug.Log("object =" + collision.gameObject.name);
-        if (collision.transform.root.gameObject.name == "Wall") // u°vˆÈŠO‚Æ‚ÌÕ“Ë‚ª”»’è‚³‚ê‚½
+        //Debug.Log("object =" + collision.gameObject.name);
+        if (collision.transform.root.gameObject.name == "Wall") // ï¿½uï¿½ï¿½ï¿½vï¿½ÈŠOï¿½Æ‚ÌÕ“Ë‚ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ê‚½
         {
-            Vector3 boundVec = transform.position - position; // ˆÚ“®ƒxƒNƒgƒ‹
-            Debug.Log("object =" + boundVec);
-            transform.position = position - boundVec; // ‰Ÿ‚µ–ß‚·
+            Vector3 boundVec = transform.position - position; // ï¿½Ú“ï¿½ï¿½xï¿½Nï¿½gï¿½ï¿½
+            //Debug.Log("object =" + boundVec);
+            transform.position = position - boundVec; // ï¿½ï¿½ï¿½ï¿½ï¿½ß‚ï¿½
         }
     }
 }
