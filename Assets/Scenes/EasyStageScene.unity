@@ -77387,9 +77387,10 @@ GameObject:
   - component: {fileID: 5448011909439266593}
   - component: {fileID: 5454448432785194859}
   - component: {fileID: 5472580349682926864}
+  - component: {fileID: 5472580349682926865}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77429,6 +77430,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11e7fff9257e224e86e49870319a32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &5472580349682926865
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469170881570785591}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.3636663
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5502994679225950456
 MonoBehaviour:
   m_ObjectHideFlags: 0
