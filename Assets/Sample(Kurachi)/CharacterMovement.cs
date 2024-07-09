@@ -98,11 +98,11 @@ public class charactermovement : MonoBehaviour
             animator.SetBool("isJumping", false); // ���n������W�����v�A�j���[�V����������
         }
 
-        Debug.Log("object =" + collision.gameObject.name);
+        Debug.Log("object =" + collision.transform.root.gameObject.name);
         if (collision.transform.root.gameObject.name == "Wall") // �u���v�ȊO�Ƃ̏Փ˂����肳�ꂽ
         {
             Vector3 boundVec = transform.position - position; // �ړ��x�N�g��
-            //Debug.Log("object =" + boundVec);
+            Debug.Log("object =" + boundVec);
             transform.position = position - boundVec; // �����߂�
         }
     }

@@ -970,13 +970,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103325210}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.42, y: 9.75, z: -801.56}
-  m_LocalScale: {x: 0.278278, y: 0.6045225, z: 4.2865553}
+  m_LocalRotation: {x: -0.047736593, y: -0, z: -0, w: 0.99885994}
+  m_LocalPosition: {x: 25.42, y: 10.13, z: -803.33}
+  m_LocalScale: {x: 0.45673767, y: 0.6045225, z: 4.2865553}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3315288930713906439}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.472, y: 0, z: 0}
 --- !u!65 &103325212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 136284729}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 1
+  Freq: -1
 --- !u!136 &136284730
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6592,8 +6592,8 @@ Transform:
   m_GameObject: {fileID: 215535084}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.33, y: 3, z: 14.15}
-  m_LocalScale: {x: 1.4409137, y: 2.0725677, z: 0.39061236}
+  m_LocalPosition: {x: 2.33, y: 0.66, z: 14.15}
+  m_LocalScale: {x: 1.4409137, y: 0.9375053, z: 0.39061236}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 905723724}
@@ -36735,7 +36735,7 @@ Transform:
   m_GameObject: {fileID: 661874312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.52, y: 0.03, z: 0.33}
+  m_LocalPosition: {x: 1.52, y: 0.012, z: 0.33}
   m_LocalScale: {x: 0.55446535, y: 1, z: 0.88829}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44531,7 +44531,7 @@ Transform:
   m_GameObject: {fileID: 880598374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.03, z: -4.11}
+  m_LocalPosition: {x: -0.03, y: -0.347, z: -4.11}
   m_LocalScale: {x: 0.55446535, y: 1, z: 0.88829}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50831,13 +50831,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012502102}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.69, y: 7.87, z: -823.31}
-  m_LocalScale: {x: 0.5206472, y: 0.6045225, z: 2.7895122}
+  m_LocalRotation: {x: -0.048384026, y: -0, z: -0, w: 0.9988288}
+  m_LocalPosition: {x: 20.69, y: 8.5, z: -823.46}
+  m_LocalScale: {x: 0.5552182, y: 0.6045225, z: 2.7895122}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3315288930713906439}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.547, y: 0, z: 0}
 --- !u!65 &1012502104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56694,7 +56694,7 @@ GameObject:
   - component: {fileID: 1076160818}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56730,7 +56730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: 1
+  Freq: -1
 --- !u!136 &1076160819
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -57754,7 +57754,7 @@ Transform:
   m_GameObject: {fileID: 1143108381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.5200012, y: 0.03, z: 9.23}
+  m_LocalPosition: {x: 1.5200012, y: 0.975, z: 9.23}
   m_LocalScale: {x: 0.55446535, y: 1, z: 0.88829}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63754,7 +63754,7 @@ GameObject:
   - component: {fileID: 1190806068}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63790,7 +63790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: {x: 0, y: 0, z: 0}
   moveRange: {x: 0, y: 0, z: 0}
-  Freq: -1.2
+  Freq: 1.2
 --- !u!136 &1190806069
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -98929,7 +98929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efd63dcb9fe3a042a116e2ddeb88cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 276016996}
 --- !u!114 &1670629016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112141,7 +112140,7 @@ Transform:
   m_GameObject: {fileID: 1936486705}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.89, y: 9.78, z: -814.59}
+  m_LocalPosition: {x: 22.89, y: 9.19, z: -814.59}
   m_LocalScale: {x: 1.3, y: 0.6045225, z: 0.9091702}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118502,7 +118501,7 @@ Transform:
   m_GameObject: {fileID: 2076609324}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.03, z: 4.79}
+  m_LocalPosition: {x: -0.03, y: 0.547, z: 4.79}
   m_LocalScale: {x: 0.55446535, y: 1, z: 0.88829}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -141208,6 +141207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3471292085881725080, guid: 14b65a7d064260f478c0481090b6910d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3910084428042891468, guid: 14b65a7d064260f478c0481090b6910d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.75
@@ -148325,8 +148328,8 @@ Transform:
   m_GameObject: {fileID: 7681540869306947773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.04, y: 11.9, z: -787.19}
-  m_LocalScale: {x: 1.3, y: 0.281825, z: 1.5}
+  m_LocalPosition: {x: 23.04, y: 11.9, z: -788.04}
+  m_LocalScale: {x: 1.3, y: 0.281825, z: 1.9653}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3315288930713906439}
