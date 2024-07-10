@@ -7,7 +7,7 @@ public class charactermovement : MonoBehaviour
     public float moveSpeed = 10f; // �ړ����x
     public float jumpForce = 5f; // �W�����v��
     private Rigidbody rb;
-    private Camera mainCamera;
+    //private Camera mainCamera;
     private bool isGrounded;
     private Animator animator; // �A�j���[�^�[
     Vector3 position; // ���̂̈ʒu���i�[����ϐ�
@@ -17,7 +17,7 @@ public class charactermovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        mainCamera = Camera.main;
+        //mainCamera = Camera.main;
         animator = GetComponent<Animator>(); // �A�j���[�^�[�̎擾
     }
 
@@ -39,20 +39,20 @@ public class charactermovement : MonoBehaviour
         float moveVertical = -Input.GetAxis("VerticalWASD"); // �O��̓����𔽓]
 
         // �J�����̑O�����ƉE�������擾
-        Vector3 cameraForward = mainCamera.transform.forward;
-        Vector3 cameraRight = mainCamera.transform.right;
+        //Vector3 cameraForward = mainCamera.transform.forward;
+        //Vector3 cameraRight = mainCamera.transform.right;
 
         // Y�������̐������[���ɂ��āAXZ���ʂɓ��e
-        cameraForward.y = 0;
-        cameraRight.y = 0;
+        //cameraForward.y = 0;
+        //cameraRight.y = 0;
 
-        cameraForward.Normalize();
-        cameraRight.Normalize();
+        //cameraForward.Normalize();
+        //cameraRight.Normalize();
 
         // �J�����̕����Ɋ�Â��Ĉړ��x�N�g�����v�Z
-        Vector3 movement = (cameraForward * moveVertical + cameraRight * moveHorizontal) * moveSpeed * Time.deltaTime;
+        //Vector3 movement = (cameraForward * moveVertical + cameraRight * moveHorizontal) * moveSpeed * Time.deltaTime;
 
-        rb.MovePosition(transform.position + movement);
+        //rb.MovePosition(transform.position + movement);
 
         // �A�j���[�V�����̐���
         bool walking = moveHorizontal != 0 || moveVertical != 0;
@@ -65,20 +65,21 @@ public class charactermovement : MonoBehaviour
         float rotateVertical = Input.GetAxis("VerticalArrow");
 
         // �L�����N�^�[�����E�ɉ�]
-        transform.Rotate(Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
+        //transform.Rotate(Vector3.up, rotateHorizontal * rotationSpeed * Time.deltaTime);
 
         // �J�����̐��������̉�]���L�����N�^�[�ɔ��f
         float newPitch = rotateVertical * rotationSpeed * Time.deltaTime;
-        float newRotation = mainCamera.transform.eulerAngles.x - newPitch;
+        //float newRotation = mainCamera.transform.eulerAngles.x - newPitch;
 
         // �㉺�����̉�]�p�x�𐧌�����
-        if (newRotation > 180f)
+        /*if (newRotation > 180f)
         {
             newRotation -= 360f;
         }
         newRotation = Mathf.Clamp(newRotation, -30f, 30f); // �ő�30�x�܂ŉ�]�\�ɐ���
 
         mainCamera.transform.RotateAround(transform.position, mainCamera.transform.right, -newPitch);
+        */
     }
 
     void Jump()
