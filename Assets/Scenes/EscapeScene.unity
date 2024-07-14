@@ -84349,15 +84349,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087146902308605326, guid: d633c8168ca35304d9c94f12ee265480, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.71
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 9087146902308605326, guid: d633c8168ca35304d9c94f12ee265480, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.22
+      value: 41.71
       objectReference: {fileID: 0}
     - target: {fileID: 9087146902308605326, guid: d633c8168ca35304d9c94f12ee265480, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.76
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 9087146902308605326, guid: d633c8168ca35304d9c94f12ee265480, type: 3}
       propertyPath: m_LocalRotation.w
@@ -102764,7 +102764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0331be8b406c7458931801077f8e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: EndingScene
+  SceneName: toEndingScene
 --- !u!82 &1670629017
 AudioSource:
   m_ObjectHideFlags: 0
