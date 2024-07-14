@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EasyStageScene.unity
     guid: 239099c605146f54283065aa1e4aa8bd
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 3c082dca77870404b878e45458172fd1
   m_configObjects: {}
