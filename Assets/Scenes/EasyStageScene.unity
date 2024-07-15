@@ -123384,11 +123384,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextTime: {fileID: 1516811393599071839}
-  _menuText: {fileID: 0}
+  _menuText: {fileID: 1406554394362902558}
   limitTime: 200
-  PanelUIObj: {fileID: 0}
-  MenuButtonUIObj: {fileID: 0}
-  NextUIObj: {fileID: 0}
+  PanelUIObj: {fileID: 1928976492321250025}
+  MenuButtonUIObj: {fileID: 2761736619407365234}
+  NextUIObj: {fileID: 8065319219097195975}
 --- !u!4 &8841751565404295186
 Transform:
   m_ObjectHideFlags: 0
