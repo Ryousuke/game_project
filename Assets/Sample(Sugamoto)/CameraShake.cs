@@ -8,6 +8,7 @@ public class CameraShake : MonoBehaviour
     //Transform myTransform;
     
     private int rotateY;
+    private int count = 180;
     private bool startShake = false;
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,13 @@ public class CameraShake : MonoBehaviour
         //Debug.Log("notShake");
         if(startShake == true)
         {
+            if(count > 0)
+            {
+                mainCamera.transform.Rotate(0,rotateY*1.5f,0f,Space.World);
+                rotateY *= -1;
+            }
             //Debug.Log("Shake");
-
-            mainCamera.transform.Rotate(0,rotateY*1.5f,0f,Space.World);
-            rotateY *= -1;
+            count--;
         }
     }
     public void OnTriggerEnter(Collider other)
@@ -35,15 +39,4 @@ public class CameraShake : MonoBehaviour
             Debug.Log("Shake");
         }
     }
-/*
-    IEnumerator CameraShake()
-    {
-        for(int i = 0; i < 50; i++)
-        {
-            mainCamera.transform.Translate(moveX, 0, 0);
-            moveX *= -1;
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
-*/
 }
